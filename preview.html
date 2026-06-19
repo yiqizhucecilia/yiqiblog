@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language, Music, and How the Brain Learns Sound</title>
+  <style>
+    :root {
+      --ink: #2c2433;
+      --muted: #6d6075;
+      --cream: #fff8ef;
+      --rose: #f3d4cf;
+      --gold: #d7a84f;
+      --sage: #879b76;
+      --violet: #6f5b8e;
+      --paper: rgba(255,255,255,.82);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, 'Times New Roman', serif;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(243,212,207,.7), transparent 28%),
+        radial-gradient(circle at 90% 0%, rgba(215,168,79,.25), transparent 30%),
+        linear-gradient(135deg, #fff8ef 0%, #fbefe7 55%, #f7e5dd 100%);
+      line-height: 1.75;
+    }
+    .page {
+      max-width: 1060px;
+      margin: 0 auto;
+      padding: 44px 22px 70px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 34px;
+      align-items: center;
+      min-height: 430px;
+    }
+    .hero-card, article, .gallery-card {
+      background: var(--paper);
+      border: 1px solid rgba(111,91,142,.18);
+      border-radius: 28px;
+      box-shadow: 0 24px 70px rgba(70,45,34,.12);
+      backdrop-filter: blur(8px);
+    }
+    .hero-card { padding: 42px; }
+    .kicker {
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--violet);
+      font-size: .78rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      font-family: system-ui, sans-serif;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 4.5rem);
+      line-height: 1.03;
+      margin: 0 0 20px;
+      font-weight: 500;
+    }
+    .subtitle {
+      font-size: 1.18rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    .visual-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .gallery-card {
+      min-height: 190px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .gallery-card h3 {
+      margin: 0 0 8px;
+      font-size: .9rem;
+      color: var(--violet);
+      font-family: system-ui, sans-serif;
+      letter-spacing: .05em;
+    }
+    svg { width: 100%; height: auto; display: block; }
+    article {
+      margin-top: 34px;
+      padding: clamp(28px, 5vw, 58px);
+      font-size: 1.12rem;
+    }
+    article p { margin: 0 0 1.22em; }
+    .drop:first-letter {
+      float: left;
+      font-size: 4.3rem;
+      line-height: .88;
+      padding-right: 10px;
+      color: var(--violet);
+    }
+    .pullquote {
+      margin: 34px auto;
+      padding: 26px 30px;
+      border-left: 5px solid var(--gold);
+      background: rgba(255,248,239,.74);
+      border-radius: 18px;
+      font-size: 1.35rem;
+      line-height: 1.5;
+      color: #4b3a5b;
+    }
+    .ending {
+      text-align: center;
+      margin-top: 38px;
+      font-style: italic;
+      color: var(--violet);
+      font-size: 1.25rem;
+    }
+    .footer-note {
+      text-align: center;
+      margin-top: 24px;
+      color: var(--muted);
+      font-family: system-ui, sans-serif;
+      font-size: .9rem;
+    }
+    @media (max-width: 840px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-card { padding: 30px; }
+    }
+    @media (max-width: 520px) {
+      .visual-grid { grid-template-columns: 1fr; }
+      article { font-size: 1.03rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="kicker">language · music · marriage · brain</div>
+        <h1>Language, Music, and How the Brain Learns Sound</h1>
+        <p class="subtitle">A tough morning with Malayalam “L,” Chinese tones, solfège, and the mysterious patience required for marriage in a second language.</p>
+      </div>
+
+      <div class="visual-grid" aria-label="illustrations">
+        <div class="gallery-card">
+          <h3>ഉള്ളി · Onion</h3>
+          <svg viewBox="0 0 240 170" role="img" aria-label="onion illustration with Malayalam word ulli">
+            <rect width="240" height="170" rx="22" fill="#fff4e8"/>
+            <text x="120" y="35" text-anchor="middle" font-size="28" fill="#6f5b8e" font-family="Noto Sans Malayalam, serif">ഉള്ളി</text>
+            <path d="M120 53 C86 79, 74 111, 92 137 C111 164, 150 158, 158 127 C166 98, 148 72, 120 53Z" fill="#f1d2b7" stroke="#9b7355" stroke-width="4"/>
+            <path d="M120 53 C115 82, 117 121, 124 151" fill="none" stroke="#b58868" stroke-width="3"/>
+            <path d="M102 69 C91 92, 91 126, 108 149" fill="none" stroke="#c99c7d" stroke-width="2"/>
+            <path d="M139 70 C151 94, 148 129, 134 151" fill="none" stroke="#c99c7d" stroke-width="2"/>
+            <path d="M113 55 C104 41, 105 28, 120 17 C124 35, 124 45, 113 55Z" fill="#879b76"/>
+            <path d="M126 54 C141 43, 145 31, 139 17 C128 29, 123 42, 126 54Z" fill="#9caf88"/>
+          </svg>
+        </div>
+
+        <div class="gallery-card">
+          <h3>Chinese Four Tones</h3>
+          <svg viewBox="0 0 240 170" role="img" aria-label="Chinese four tone contours">
+            <rect width="240" height="170" rx="22" fill="#fff4e8"/>
+            <line x1="28" y1="130" x2="212" y2="130" stroke="#c8b7a6"/>
+            <line x1="28" y1="42" x2="212" y2="42" stroke="#ead9c8"/>
+            <polyline points="35,55 80,55" fill="none" stroke="#6f5b8e" stroke-width="5" stroke-linecap="round"/>
+            <polyline points="95,105 140,50" fill="none" stroke="#d7a84f" stroke-width="5" stroke-linecap="round"/>
+            <polyline points="35,135 58,125 82,83" fill="none" stroke="#879b76" stroke-width="5" stroke-linecap="round"/>
+            <polyline points="106,55 150,125" fill="none" stroke="#b66363" stroke-width="5" stroke-linecap="round"/>
+            <text x="58" y="76" text-anchor="middle" font-size="16" fill="#6f5b8e" font-family="system-ui">1st</text>
+            <text x="121" y="116" text-anchor="middle" font-size="16" fill="#9b762f" font-family="system-ui">2nd</text>
+            <text x="58" y="154" text-anchor="middle" font-size="16" fill="#647755" font-family="system-ui">3rd</text>
+            <text x="128" y="42" text-anchor="middle" font-size="16" fill="#9a4d4d" font-family="system-ui">4th</text>
+            <text x="186" y="93" text-anchor="middle" font-size="21" fill="#2c2433" font-family="serif">mā má mǎ mà</text>
+          </svg>
+        </div>
+
+        <div class="gallery-card">
+          <h3>Do Re Mi Fa So</h3>
+          <svg viewBox="0 0 240 170" role="img" aria-label="music score with do re mi fa so">
+            <rect width="240" height="170" rx="22" fill="#fff4e8"/>
+            <g stroke="#4d4358" stroke-width="1.5">
+              <line x1="24" y1="58" x2="216" y2="58"/>
+              <line x1="24" y1="74" x2="216" y2="74"/>
+              <line x1="24" y1="90" x2="216" y2="90"/>
+              <line x1="24" y1="106" x2="216" y2="106"/>
+              <line x1="24" y1="122" x2="216" y2="122"/>
+            </g>
+            <text x="30" y="111" font-size="54" fill="#6f5b8e" font-family="serif">𝄞</text>
+            <g fill="#2c2433">
+              <ellipse cx="82" cy="122" rx="8" ry="6" transform="rotate(-20 82 122)"/><line x1="90" y1="121" x2="90" y2="76" stroke="#2c2433" stroke-width="3"/>
+              <ellipse cx="113" cy="106" rx="8" ry="6" transform="rotate(-20 113 106)"/><line x1="121" y1="105" x2="121" y2="64" stroke="#2c2433" stroke-width="3"/>
+              <ellipse cx="145" cy="90" rx="8" ry="6" transform="rotate(-20 145 90)"/><line x1="153" y1="89" x2="153" y2="50" stroke="#2c2433" stroke-width="3"/>
+              <ellipse cx="177" cy="74" rx="8" ry="6" transform="rotate(-20 177 74)"/><line x1="185" y1="73" x2="185" y2="38" stroke="#2c2433" stroke-width="3"/>
+            </g>
+            <text x="82" y="148" text-anchor="middle" font-size="14" fill="#6d6075" font-family="system-ui">do</text>
+            <text x="113" y="148" text-anchor="middle" font-size="14" fill="#6d6075" font-family="system-ui">re</text>
+            <text x="145" y="148" text-anchor="middle" font-size="14" fill="#6d6075" font-family="system-ui">mi</text>
+            <text x="177" y="148" text-anchor="middle" font-size="14" fill="#6d6075" font-family="system-ui">fa</text>
+            <text x="207" y="148" text-anchor="middle" font-size="14" fill="#6d6075" font-family="system-ui">so</text>
+          </svg>
+        </div>
+
+        <div class="gallery-card">
+          <h3>Sound in the Brain</h3>
+          <svg viewBox="0 0 240 170" role="img" aria-label="brain processing sound waves">
+            <rect width="240" height="170" rx="22" fill="#fff4e8"/>
+            <path d="M93 46 C66 45, 51 66, 58 89 C39 105, 49 138, 78 136 C89 154, 123 153, 132 134 C158 140, 181 122, 176 96 C194 75, 177 48, 151 50 C138 31, 106 29, 93 46Z" fill="#f3d4cf" stroke="#9b6771" stroke-width="4"/>
+            <path d="M82 70 C105 58, 103 92, 125 82 C148 71, 146 101, 164 94" fill="none" stroke="#9b6771" stroke-width="3" stroke-linecap="round"/>
+            <path d="M76 109 C101 96, 109 128, 135 113 C153 103, 158 123, 171 117" fill="none" stroke="#9b6771" stroke-width="3" stroke-linecap="round"/>
+            <path d="M31 75 C43 61, 55 61, 67 75" fill="none" stroke="#d7a84f" stroke-width="4" stroke-linecap="round"/>
+            <path d="M25 98 C42 79, 59 79, 76 98" fill="none" stroke="#d7a84f" stroke-width="4" stroke-linecap="round"/>
+            <text x="121" y="154" text-anchor="middle" font-size="15" fill="#6d6075" font-family="system-ui">listen → imitate → remember</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <article>
+      <p class="drop">It was a tough morning.</p>
+
+      <p>One of the hidden challenges of marriage is when a husband and wife come from different cultures, speak different native languages, and are forced to communicate in a second language. Oddly enough, I think it is great for our relationship.</p>
+
+      <p>People sometimes ask why Ash and I rarely have huge arguments. My theory is simple: try having a serious fight in your second language. Even if you have spoken it for years, it is exhausting. You have to think and translate at the same time. After five minutes, most of your desire to argue has already disappeared. For me, speaking a second language automatically puts my brain into “problem-solving mode” rather than “emotional-expression mode.” So instead of fighting, we usually move directly to solving the problem.</p>
+
+      <p>This morning, however, Ash decided to take revenge for all the Chinese lessons I have given him by teaching me Malayalam again.</p>
+
+      <p>Chinese and Malayalam are both challenging languages if your linguistic background is mainly Western European languages. There is simply no easy shortcut. Yet I have noticed something interesting: people with strong musical abilities often learn pronunciation much faster.</p>
+
+      <p>Chinese has four tones. Ash often struggles to reproduce the tones correctly when he follows Duolingo, but when he listens to me and imitates my pronunciation, he gets them right about 95% of the time. His musical ear helps tremendously.</p>
+
+      <div class="pullquote">For me, learning Malayalam is another story. As someone who is not nearly as musically gifted as Ash, Malayalam can feel like torture.</div>
+
+      <p>This morning we were working on two different “L” sounds. First, I could not even hear the difference between them. The sounds simply do not exist in Mandarin, and they do not really exist in English either. The first challenge in learning any new sound is that your brain does not recognize it as meaningful.</p>
+
+      <p>Then Ash demonstrated how to make the sound: “Put your tongue on the roof of your mouth, flatten it out, and then move it quickly.”</p>
+
+      <p>I followed the instructions. My tongue moved exactly where he told me to put it. According to Ash, however, the resulting sound was “not even close.” At that point, I gave up.</p>
+
+      <p>This, by the way, is exactly the difference between people with exceptional musical ears and the rest of us. They hear tiny differences that most people cannot detect. Sometimes they can be unbelievably demanding listeners.</p>
+
+      <p>Ninety-nine percent of humanity cannot tell the difference. Please just let me go.</p>
+
+      <p>But that is also why great musicians are so valuable. Without that one percent of people who can hear the difference, none of us would know how far we are from perfection—even if those people can occasionally be a little mean about it!</p>
+
+      <p>Our battle with the Malayalam L’s—and the three different R’s—will continue.</p>
+
+      <p>Yet the entire experience made me think about how the human brain processes sound, whether in language or music.</p>
+
+      <p>When I was in elementary school, I could not match pitch. I was actually told not to sing. Matching pitch is surprisingly similar to learning pronunciation in a new language. Before you can reproduce a sound, your brain first has to become familiar with it.</p>
+
+      <p>When a sound does not exist in your native language, your brain treats it as strange. It takes time and repeated exposure before your auditory system learns to distinguish it reliably.</p>
+
+      <p>That is why listening is so important.</p>
+
+      <p>The best way to improve musical hearing is to listen more. The best way to learn a language is to immerse yourself in it. The more exposure your brain has, the more opportunities it gets to build accurate sound categories.</p>
+
+      <p>After hearing comes production. Singing, in many ways, is like speaking a new language. Once your brain recognizes the sound, it must train the muscles to reproduce it. In my case, the Malayalam “L” requires tongue movements that my tongue seems completely unwilling to perform. I am convinced Ash’s tongue is at least an inch longer than mine.</p>
+
+      <p>Perhaps if I practice saying <em>ulli</em> every day, my tongue will eventually grow longer.</p>
+
+      <p>Then comes a third challenge: memory. Learning pitch relationships in music is a little like learning vocabulary in a new language. It takes time to build a library of sounds in your brain. But both music and language involve more than simply remembering sounds.</p>
+
+      <p>Reading solfège is not so different from reading Chinese characters. In both cases, you are connecting a visual symbol to a sound stored in memory. The task is not merely remembering; it is linking a writing system to a pronunciation system.</p>
+
+      <p>This is also why singing is such a natural entrance into music. The human voice is often easier to match than the pitch of a piano or another instrument. Just as our native language is the first sound system we learn, the human voice is often the most intuitive musical instrument we encounter.</p>
+
+      <p>For the record, I promised Ash that I would not post the video of him forcing me to pronounce Malayalam words on Facebook.</p>
+
+      <p class="ending">So instead, I wrote this article to remember this particularly tough morning. I think I got the better deal.</p>
+    </article>
+
+    <div class="footer-note">Designed as a standalone webpage · open in any browser</div>
+  </main>
+</body>
+</html>
